@@ -17,10 +17,15 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
     position: sticky;
-    display: flex;
-    top: 0;
-    padding: 4px 20px;
     z-index: 1;
+    top: 0;
+}
+
+.navbar .navwidth {
+    margin: auto;
+    padding: 4px 0;
+    max-width: 1020px;
+    display: flex;
     gap: 10px;
 }
 
@@ -39,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     align-items: center;
-    gap: 8px;
+    gap: 4px;
 }
 
 .navbar ul li {
@@ -54,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section {
-    max-width: 1280px;
+    max-width: 980px;
     margin: 1.25rem auto;
     padding: 0 0.5rem;
     display: flex;
@@ -70,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+    border-radius: 8px;
     height: 380px;
     width: 52.5%;
 }
@@ -78,8 +84,31 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url('../images/section_1.webp');
 }
 
-.bg-section2 {
+.section .bg-section.bg-section2 {
     background-image: url('../images/section_2.webp');
+}
+
+.main {
+    max-width: 980px;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.main .band {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.main .band img {
+    border-radius: 4px;
+    max-width: 600px;
+    margin: 0.5rem auto;
+}
+
+.main .band .name {
+    font-family: 'Comic Sans MS';
+    font-size: 28px;
 }
 
 .tbl-biru {
@@ -97,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.5s;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:768px) {
     .navbar {
         flex-direction: column;
         gap: 10px;
