@@ -1,0 +1,133 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Comic Sans MS';
+    margin-bottom: 0.5rem;
+}
+
+.navbar {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
+    position: sticky;
+    display: flex;
+    top: 0;
+    padding: 4px 20px;
+    z-index: 1;
+    gap: 10px;
+}
+
+.navbar .logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    margin: 0 auto 0 0;
+    padding: 0 16px;
+    color: #0080ff;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar ul li {
+    text-align: center;
+    padding: 0 8px;
+    color: black;
+}
+
+.navbar ul li a {
+    font-weight: 700;
+    color: black;
+}
+
+.section {
+    max-width: 1280px;
+    margin: 1.25rem auto;
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem
+}
+
+.section .content {
+    width: 47.5%;
+}
+
+.section .bg-section {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 380px;
+    width: 52.5%;
+}
+
+.section .bg-section.bg-section1 {
+    background-image: url('../images/section_1.webp');
+}
+
+.bg-section2 {
+    background-image: url('../images/section_2.webp');
+}
+
+.tbl-biru {
+    background: #0000ff;
+    border-radius: 35px;
+    display: block;
+    padding: 8px 15px;
+    color: white !important;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tbl-biru:hover {
+    background: #0000e0;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:1024px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar .logo,
+    .navbar ul {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .navbar .logo, .navbar ul {
+        margin: auto;
+    }
+
+    .navbar ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d3d3d3;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #93909e;
+    border-radius: 1rem;
+}
